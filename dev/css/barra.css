@@ -1,0 +1,49 @@
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta la barra lateral inicialmente */
+    background-color: #f8f9fa;
+    transition: left 0.3s ease;
+    padding-top: 20px;
+}
+
+.sidebar.fixed-top {
+    top: 0;
+    left: 0; /* Mantiene la barra lateral visible en la parte superior */
+}
+
+.sidebar .nav-link { color: #333; }
+.sidebar .nav-link:hover { background-color: #e9ecef; }
+
+.toggle-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.toggle-btn .open { display: inline; }
+.toggle-btn .close { display: none; }
+
+.sidebar.active { left: 0; }
+.sidebar.active + .toggle-btn .open { display: none; }
+.sidebar.active + .toggle-btn .close { display: inline; }
+
+
+.toggle-btn {
+    position: fixed; /* Fija la posición del botón */
+    top: 15px;      /* Posición desde la parte superior */
+    left: 15px;     /* Posición desde la parte izquierda */
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.toggle-btn .open { display: inline; }
+.toggle-btn .close { display: none; }
+
+.sidebar.active + .toggle-btn .open { display: none; }
+.sidebar.active + .toggle-btn .close { display: inline; }

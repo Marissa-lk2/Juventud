@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding-top: 200px;
+}
+
+/* Encabezado */
+header {
+    margin-top: 40px;
+}
+
+header h1 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Beneficios y requisitos */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefits, .requirements {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.benefits h2, .requirements h2 {
+    color: #8a2be2;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+}
+
+/* Formulario */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: left;
+}
+
+.form-container h2 {
+    color: #b100e8;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+label {
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "DM Sans", sans-serif;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+button {
+    width: 100%;
+    background: #844aaa98;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #844aaac9;
+}

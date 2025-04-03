@@ -1,0 +1,239 @@
+#contenedor-calendario {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 140px;
+}
+
+#calendario-container {
+  max-width: 420px;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#calendario-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+#mes-actual {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  background: #9d57f8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  padding: 12px;
+}
+
+#calendario div,
+#calendario table {
+  width: 100%;
+}
+
+#calendario table {
+  border-collapse: separate;
+  border-spacing: 6px;
+  width: 100%;
+}
+
+#calendario th,
+#calendario td {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+#calendario th {
+  background-color: #9d57f8;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dia {
+  background: #f5f7fa;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 14px;
+}
+
+.dia:hover {
+  background: #832ef1;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.dia-con-evento {
+  background: #ffdb58 !important;
+  color: black !important;
+  border: 2px solid #ff9900;
+}
+
+.dia-seleccionado {
+  background: #8234db;
+  color: white;
+  border: 2px solid #2980b9;
+  box-shadow: 0px 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+#eventos {
+  max-width: 600px;
+  text-align: center;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#eventos h2 {
+  color: #9d57f8;
+  font-size: 26px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#eventos h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #9d57f8;
+}
+
+#fecha-seleccionada {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#tabla-eventos {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#tabla-eventos th,
+#tabla-eventos td {
+  border: 1px solid #e6e6e6;
+  padding: 14px;
+  text-align: left;
+}
+
+#tabla-eventos th {
+  background-color: #9d57f8;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+#tabla-eventos tr:nth-child(even) {
+  background-color: #f7f9fc;
+}
+
+#tabla-eventos tr:hover {
+  background-color: #edf2f7;
+}
+
+#tabla-eventos td:empty {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Media Queries */
+@media (min-width: 1025px) {
+  #calendario-container {
+    max-width: 480px;
+  }
+  #eventos {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #contenedor-calendario {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #eventos {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  #contenedor-calendario {
+    margin-top: 80px;
+    gap: 30px;
+  }
+  #calendario-container, #eventos {
+    max-width: 90vw;
+    padding: 15px;
+  }
+  #mes-actual {
+    font-size: 20px;
+  }
+  button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  #calendario th,
+  #calendario td {
+    padding: 8px;
+    font-size: 13px;
+  }
+  #eventos h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dia {
+    font-size: 12px;
+    padding: 8px !important;
+  }
+  #tabla-eventos td {
+    padding: 8px;
+  }
+}

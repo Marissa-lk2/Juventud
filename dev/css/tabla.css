@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/*Boton -----------------------------------------------------------------------*/
+.btn {
+    border: none; 
+    color: black; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+
+  .excel-btn {
+    margin-left: 4rem;
+    background-color: white; 
+    border: 2px solid #599c60;
+}
+
+.excel-btn:hover {
+    background: #599c60; 
+    color: white;
+}
+
+.word-btn {
+    margin-left: 1rem;
+    background-color: white; 
+    border: 2px solid #185abd;
+} 
+
+.word-btn:hover {
+    background: #185abd; 
+    color: white;
+}
+
+/*Tabla ---------------------------------------------------------------------------------------*/
+.table-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 50vh;
+    padding: 20px;
+}
+
+table {
+    border: solid 1px #000000;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead {
+    background: rgba(43, 69, 97, 0.4);
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 10px 50px;
+    border-bottom: solid 1px rgba(35, 68, 107, 0.954);
+}
+
+tbody tr:hover {
+    background-color: #3789ac2a;
+}
+
+tbody tr td img {
+    width: 100px;
+
+}
+
+tbody tr td .edit-btn {
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    border-radius: 1rem; 
+    overflow:hidden;
+}
+
+tbody tr td .edit-btn:hover {
+    background: #46a049; 
+    color: white;
+    -webkit-transform:scale(.8);
+    transform:scale(.8);
+}
+
+tbody tr td .delete-btn {
+    margin-top: 5px;
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    border-radius: 1rem; 
+    overflow:hidden;
+} 
+
+tbody tr td .delete-btn:hover {
+    background: #da190b; 
+    color: white;
+    -webkit-transform:scale(.8);
+    transform:scale(.8);
+}
+
+tbody tr td .btn img {
+    height: 30px;
+    width: 30px;
+}
+
+tbody tr td .notepad-btn {
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    border-radius: 1rem; 
+    overflow:hidden;
+}
+
+tbody tr td .notepad-btn:hover {
+    background: #398dda; 
+    color: white;
+    -webkit-transform:scale(.8);
+    transform:scale(.8);
+}
+
+tbody tr td .btn img {
+    height: 30px;
+    width: 30px;
+}
+
+tbody tr td a {
+    text-decoration: none;
+}
+
+/* barra nav*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-right: 2cm;
+    padding-top: 1cm;
+    background-color: none;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    cursor: pointer;
+  }
+  
+
+  .titulo{
+    text-align: center;
+  }

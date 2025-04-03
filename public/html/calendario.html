@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de la Juventud - Calendario </title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/calenda.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/logocasa.png">
+    <link rel="apple-touch-icon" type="image/png" href="../assets/img/logocasa.png">
+    <link rel="apple-touch-startup-image" type="image/png" href="../assets/img/logocasa.png">
+</head>
+<body>
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
+    
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+        <!-- Calendario -->
+      <div id="contenedor-calendario">
+        <section id="calendario-container">
+          <div class="calendario-header">
+            <button id="anterior">&lt;</button>
+            <span id="mes-actual"></span>
+            <button id="siguiente">&gt;</button>
+          </div>
+          <div id="calendario"></div>
+        </section>
+
+        <!-- Eventos -->
+        <section id="eventos">
+          <h2>Eventos del Día</h2>
+          <p id="fecha-seleccionada">Selecciona un día</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Título</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-eventos">
+              <tr>
+                <td colspan="3">No hay eventos</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    
+
+    <!-- Scripts -->
+    <script src="../js/calendario.js"></script>
+</body>
+</html>

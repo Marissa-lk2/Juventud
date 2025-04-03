@@ -1,0 +1,202 @@
+/* Grid layout */
+.item1 { grid-area: header; }
+.curso { grid-area: curso; }
+.resultadoc { grid-area: resultadoc; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'curso curso curso curso resultadoc resultadoc';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/* Centering content */
+.centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.item1 {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* User form */
+.form-container {
+    width: 80%;
+    max-width: 700px;
+    min-height: 400px;
+    max-height: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 14px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="number"],
+.form-container input[type="date"],
+.form-container input[type="time"],
+.form-container input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    overflow-wrap: break-word;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: gray;
+}
+
+/* Alignment */
+.galeria .centrar,
+.curso .centrar,
+.resultadoc .centrar {
+    text-align: left;
+    margin: 0;
+}
+
+.curso .centrar h3,
+.resultadoc .centrar h3,
+.galeria .centrar h3 {
+    text-align: center;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #fdfdfd;
+}
+
+.button_slide {
+    color: #1e1c1c;
+    border: 2px solid gray;
+    border-radius: 0;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 gray;
+    transition: ease-out 0.4s;
+}
+
+.button_slide:hover {
+    color: rgb(245, 243, 243);
+}
+
+.slide_down:hover {
+    box-shadow: inset 0 100px 0 0 gray;
+}
+
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 gray;
+}
+
+.slide_left:hover {
+    box-shadow: inset 0 0 0 50px gray;
+}
+
+.slide_diagonal:hover {
+    box-shadow: inset 500px 500px 0 0 gray;
+}
+
+#outer {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Ajusta según el ancho deseado */
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
