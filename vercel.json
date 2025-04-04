@@ -3,11 +3,11 @@
   "builds": [
     {
       "src": "dev/controller/**/*.php",
-      "use": "vercel-php@0.6.0"
+      "use": "@vercel/php"
     },
     {
       "src": "public/**/*.php",
-      "use": "vercel-php@0.6.0"
+      "use": "@vercel/php"
     }
   ],
   "routes": [

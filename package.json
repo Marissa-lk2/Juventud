@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "g": "^2.0.1",
+    "npm": "^11.2.0"
+  },
+  "name": "juventud",
+  "version": "1.0.0",
+  "private": true
+}
+
