@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dev/controller/**/*.php",
+      "use": "vercel-php@0.6.0"
+    },
+    {
+      "src": "public/**/*.php",
+      "use": "vercel-php@0.6.0"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/dev/(.*)",
+      "dest": "/dev/$1",
+      "headers": {
+        "Cache-Control": "no-store"
+      }
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
+}
